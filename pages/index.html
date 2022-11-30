@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel booking</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&family=Finger+Paint&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <nav class="nav">
+            <div class="mobile-nav">
+              <div class="nav-close">&times;</div>
+              <a href="#">Главная</a>
+              <a href="#">Удобства</a>
+              <a href="#">Комнаты</a>
+              <a href="#">Обратная связь</a>
+            </div>
+            <div class="logo">
+              <h1>SHERATON</h1>
+              <span>HOTELS</span>
+            </div>
+            <div class="mobile-menu">
+              <span class="mobile-menu-line1"></span>
+              <span class="mobile-menu-line2"></span>
+              <span class="mobile-menu-line3"></span>
+            </div>
+
+            <div class="nav-links">
+              <div class="nav-link active">
+                <a href="#">Главная</a>
+              </div>
+              <div class="nav-link">
+                <a href="#">Удобства</a>
+              </div>
+              <div class="nav-link">
+                <a href="#">Комнаты</a>
+              </div>
+              <div class="nav-link">
+                <a href="#">Обратная связь</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header-greeting">
+            <span class="greeting">Добро пожаловать</span>
+            <p class="greeting-desc">
+              Забронируйте свое пребывание роскошью по доступным ценам.
+            </p>
+          </div>
+          <div class="header-basement">
+            <button class="header-btn">
+              <img src="../images/header-btn.svg" />Забронировать сейчас
+            </button>
+            <button class="scroll-btn" tabindex="-1">
+              <img src="../images/btn-scroll.svg" alt="scroll" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <p class="main-desc">
+          Во все наши типы номеров входит бесплатный завтрак
+        </p>
+        <div class="performances">
+          <div class="performance">
+            <div class="performance-wrapper">
+              <div class="performance-border"></div>
+              <div class="performance-info">
+                <span class="performance-title">Роскошь переосмыслена</span>
+                <p class="performance-desc">
+                  Наши номера спроектированы таким образом, чтобы перенести вас
+                  в обстановку, созданную для отдыха. Отвлекитесь от
+                  повседневной домашней жизни и найдите для себя уединенный рай.
+                </p>
+              </div>
+            </div>
+            <div class="performance-img">
+              <img src="../images/home-img1.png" alt="img of performance" />
+            </div>
+          </div>
+          <div class="performance">
+            <div class="performance-wrapper">
+              <div class="performance-border"></div>
+              <div class="performance-info">
+                <span class="performance-title"
+                  >Оставь свои заботы на песке</span
+                >
+                <p class="performance-desc">
+                  Мы любим жизнь на пляже. Близость к океану с доступом к
+                  бесконечному песчаному пляжу обеспечивает спокойное состояние
+                  души. Кажется, что время остановилось, наблюдая за океаном.
+                </p>
+              </div>
+            </div>
+            <div class="performance-img">
+              <img src="../images/home-img2.png" alt="img of performance" />
+            </div>
+          </div>
+        </div>
+        <div class="main-btn">
+          <button>ИССЛЕДОВАТЬ</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <h5>SHERATON</h5>
+              <span>HOTELS</span>
+            </div>
+            <div class="footer-communication">
+              <span>Адрес</span>
+              <span>+91 1234567890</span>
+              <span>hotel@gmail.com</span>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+            <a href="#">Условия</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#">
+              <img src="../images/facebook.svg" alt="Facebook" />
+              <span>Facebook</span>
+            </a>
+            <a href="#">
+              <img src="../images/inst.svg" alt="Facebook" />
+              <span>Twitter</span>
+            </a>
+            <a href="#">
+              <img src="../images/twitter.svg" alt="Facebook" />
+              <span>Instagram</span>
+            </a>
+          </div>
+          <div class="footer-subscribe">
+            <span>Подписаться на обновления</span>
+            <form class="footer-subs">
+              <input type="email" placeholder="Email" />
+              <button type="submit">OK</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+  </body>
 </html>
