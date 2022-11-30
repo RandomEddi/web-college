@@ -1,5 +1,9 @@
 @import url(./variables.css);
 
+.header {
+  background-image: url(../images/home-header-bg.png);
+}
+
 /* main */
 
 .main-desc {

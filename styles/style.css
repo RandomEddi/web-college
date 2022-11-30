@@ -30,11 +30,20 @@ button {
 }
 
 .header {
-  background-image: url(../images/home-header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-position: center;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(20, 39, 74, 0.5);
 }
 
 .container {
@@ -44,6 +53,7 @@ button {
 }
 
 .nav {
+  z-index: 100;
   display: flex;
   justify-content: space-between;
 }
@@ -51,6 +61,7 @@ button {
 .logo {
   max-height: 137px;
   background: var(--blueColor);
+  z-index: 100;
   text-align: center;
   padding: 35px 40px 35px 41px;
   color: var(--secondary);
@@ -82,7 +93,7 @@ button {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 200;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +165,7 @@ button {
 
 .header-greeting {
   display: flex;
+  z-index: 100;
   flex-direction: column;
 }
 
@@ -172,6 +184,7 @@ button {
 }
 
 .header-basement {
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
