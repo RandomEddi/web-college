@@ -36,16 +36,6 @@ button {
   background-position: center;
 }
 
-.header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(20, 39, 74, 0.5);
-}
-
 .container {
   padding: 0 20px;
   max-width: 1650px;
@@ -89,12 +79,12 @@ button {
 }
 
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  z-index: 200;
-  display: flex;
+  z-index: 1000;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 15px;
@@ -382,7 +372,9 @@ button {
   .mobile-menu {
     display: block;
   }
-
+  .mobile-nav {
+    display: flex;
+  }
   .nav-links {
     display: none;
   }

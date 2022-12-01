@@ -3,6 +3,15 @@
 .header {
   background-image: url(../images/home-header-bg.png);
 }
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(20, 39, 74, 0.5);
+}
 
 /* main */
 

@@ -1,0 +1,100 @@
+@import url(./variables.css);
+
+.header {
+  background-color: #b7904b;
+}
+
+.header-feedback {
+  padding-bottom: 150px;
+}
+
+.header-title {
+  margin-top: 280px;
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--primary);
+  text-align: center;
+}
+
+/* main */
+
+.section-desc {
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-desc h4 {
+  margin-top: 84px;
+  font-family: 'Adobe Garamond Pro';
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--blueColor);
+  margin-bottom: 34px;
+}
+.section-desc p {
+  text-align: left;
+  font-size: 25px;
+  color: var(--blueColor);
+}
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 250px;
+}
+
+.feedback-desc p {
+  color: var(--blueColor);
+  font-size: 30px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback input,
+.feedback textarea {
+  outline: none;
+  width: 570px;
+  padding: 5px;
+  font-size: 22px;
+  color: var(--blueColor);
+  background: var(--primary);
+  border: 2px solid rgba(20, 39, 74, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.feedback textarea {
+  height: 300px;
+}
+.feedback label {
+  font-family: 'Arial';
+  font-size: 25px;
+  color: var(--blueColor);
+  margin-bottom: 8px;
+}
+
+.feedback button {
+  padding: 24px 32px;
+  background: var(--secondary);
+  color: var(--primary);
+  align-self: flex-end;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 52px;
+}
+
+@media (max-width: 980px) {
+  .feedback-desc {
+    display: none;
+  }
+  .feedback {
+    display: block;
+  }
+  .feedback input,
+  .feedback textarea {
+    width: 100%;
+  }
+}
